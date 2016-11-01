@@ -2,6 +2,11 @@
   "RSpec": {
     "coverage": {
       "/home/david/Broncode/personal/MarsRovers/lib/rover_falls_exception.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         1,
         1,
@@ -9,6 +14,11 @@
         null
       ],
       "/home/david/Broncode/personal/MarsRovers/lib/rover.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         1,
         1,
@@ -69,6 +79,11 @@
         null
       ],
       "/home/david/Broncode/personal/MarsRovers/lib/plateau.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         1,
         1,
@@ -149,6 +164,6 @@
         null
       ]
     },
-    "timestamp": 1478035040
+    "timestamp": 1478036179
   }
 }
