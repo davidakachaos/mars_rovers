@@ -1,3 +1,8 @@
+#
+# Class Rover provides a Rover
+#
+# @author David Westerink <davidakachaos@gmail.com>
+#
 class Rover
   HEADINGS = %w(N E S W).freeze
   MOVEMENT = { 'N' => [:y, 1],

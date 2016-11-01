@@ -1,3 +1,8 @@
+#
+# Class Plateau provides a plane for a Rover to stay on.
+#
+# @author David Westerink <davidakachaos@gmail.com>
+#
 class Plateau
   attr_reader :top
   attr_reader :max_x
