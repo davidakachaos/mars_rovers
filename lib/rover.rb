@@ -47,7 +47,7 @@ class Rover
   def m
     axis, change = MOVEMENT[heading].flatten
     # Guard against out of bounds
-    raise RoverFallsException, 'fallen' if error_move(axis, @position[axis] + change)
+    raise RoverFallsException if error_move(axis, @position[axis] + change)
     @position[axis] += change
   end
 
