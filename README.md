@@ -22,4 +22,8 @@ Tests are writen in RSpec and can be executed outside of Guard by running:
 rspec
 ```
 ## Coding style
-I try to follow the Rubocop specs as much as possible. Rubocop is also part of the Guardfile to keep tabs on myself to keep using the style. If a style causes troubles, or isn't needed, it can be turned off.
+I try to follow the Rubocop specs as much as possible. Rubocop is also part of the Guardfile to keep tabs on myself to keep using the style. If a style causes troubles or isn't needed, it can be turned off.
+
+## Remarks, retrospect, git commits etc
+For this project I didn't create many commits, I am aware of that. In retrospect, I think it would be useful to have more of those, but I'm too far in the challenge to change that now.
+The challenge is a nice one, and I'm aware there are many solutions to this. I hope to show a consistent style here and code that works.
