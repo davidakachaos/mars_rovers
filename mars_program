@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+require_relative './lib/plateau.rb'
+require_relative './lib/rover_falls_exception.rb'
+require_relative './lib/rover.rb'
+def prompt(*args)
+  print(*args)
+  STDIN.gets.strip
+end
+
+puts 'Welcome to the Mars Rovers program'
+puts 'To use this program, please input the top right coordinates for the plateau'
+puts 'Example: "5 5" or "10 10" (without the quotes)'
+coords = prompt('Coordinates: ')
+
+plateau = Plateau.new(coords)
+puts
+puts 'Thank you. Please specify the rovers now.'
+puts 'Each rover has two lines; first the current position like "1 2 N" (without the quotes)'
+puts 'Followed by the string of commands for that Rover.'
+puts
+puts 'If you are done with inputting Rovers, just press enter when a new position is asked.'
+puts
+rovers = []
+
+while coords = prompt('Rover Coordinates: ')
+  break if coords.empty?
+
+  rover = Rover.new(coords, plateau)
+  rover.command(prompt('Rover commands: '))
+  rovers << rover
+end
+puts
+puts "Here are the results for the #{rovers.size} rovers that were active on Mars: "
+puts
+counter = 0
+rovers.each do |rover|
+  counter += 1
+  puts "Rover ##{counter}: #{rover.current_position}"
+end
+puts
+puts 'Thank you for using the Mars Rover Program'
+puts

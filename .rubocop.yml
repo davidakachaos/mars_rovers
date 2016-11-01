@@ -1,0 +1,15 @@
+inherit_from: .rubocop_todo.yml
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 93
+
+Lint/ShadowingOuterLocalVariable:
+  Exclude:
+    - 'mars_program'
+
+Lint/AssignmentInCondition:
+  Exclude:
+    - 'mars_program'
